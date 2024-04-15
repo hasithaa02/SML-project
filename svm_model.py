@@ -7,6 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1w7iQEllLeu0ezGG1SnSxQeDSH7pn630X
 """
 pip install nltk
+
 import json
 import pandas as pd
 import nltk
