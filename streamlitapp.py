@@ -12,7 +12,7 @@ import os  # Import the os module to work with file paths
 nltk.download('punkt')
 
 # Load the TF-IDF model
-tfidi_model_url = "https://drive.google.com/file/d/18w8H1Xs7Nq-3fPGC4D3grRX6BHiZlUdG/view?usp=drive_link"
+tfidi_model_url = "https://drive.google.com/file/d/1Cs8rZXIUH_0TLx6MaNat9sBg-d1V-uZz/view?usp=sharing"
 # Specify the output filename for the downloaded file
 tfidi_model_file = gdown.download(tfidi_model_url, quiet=False, output="tfidf_model.pkl")
 print("TF-IDF model file path:", tfidi_model_file)  # Print the file path to check if it's correct
