@@ -8,15 +8,6 @@ import nltk
 import pickle 
 import os  # Import the os module to work with file paths
 
-# Print the current working directory to verify the file path
-print("Current working directory:", os.getcwd())
-
-# Print the content of the directory to verify the existence of the file
-print("Content of the directory:", os.listdir())
-
-# Load the TF-IDF model
-tfidi = joblib.load(tfidi_model_file)
-
 # Download NLTK resources
 nltk.download('punkt')
 
@@ -25,6 +16,12 @@ tfidi_model_url = "https://drive.google.com/file/d/18w8H1Xs7Nq-3fPGC4D3grRX6BHiZ
 tfidi_model_file = gdown.download(tfidi_model_url, quiet=False)
 print("TF-IDF model file path:", tfidi_model_file)  # Print the file path to check if it's correct
 tfidi = joblib.load(tfidi_model_file)
+
+# Print the current working directory to verify the file path
+print("Current working directory:", os.getcwd())
+
+# Print the content of the directory to verify the existence of the file
+print("Content of the directory:", os.listdir())
 
 # Load the SVM model
 svm_model = joblib.load('svm2_model.pkl')
