@@ -28,7 +28,7 @@ print("Content of the directory:", os.listdir())
 svm_model = joblib.load('svm2_model.pkl')
 
 # Load the TF-IDF vectorizer used for training
-with open('tfidf_vectorizer.pkl', 'rb') as f:
+with open('tfidf_vectorizer1.pkl', 'rb') as f:
     tfidf_vectorizer = pickle.load(f)
 
 def analysis(input_text, tfidf_vectorizer, svm_model):
