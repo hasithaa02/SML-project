@@ -11,7 +11,7 @@ import pickle
 nltk.download('punkt')
 
 # Load the TF-IDF model
-tfidi_model_url = "https://drive.google.com/file/d/18w8H1Xs7Nq-3fPGC4D3"
+tfidi_model_url = "https://drive.google.com/file/d/18w8H1Xs7Nq-3fPGC4D3grRX6BHiZlUdG/view?usp=drive_link"
 tfidi_model_file = gdown.download(tfidi_model_url, quiet=False)
 print("TF-IDF model file path:", tfidi_model_file)  # Print the file path to check if it's correct
 tfidi = joblib.load(tfidi_model_file)
