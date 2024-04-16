@@ -6,6 +6,19 @@ import gdown
 from io import BytesIO
 import nltk
 import pickle 
+import os  # Import the os module to work with file paths
+
+# Print the current working directory to verify the file path
+print("Current working directory:", os.getcwd())
+
+# Print the content of the directory to verify the existence of the file
+print("Content of the directory:", os.listdir())
+
+# Print the value of tfidi_model_file to verify the file path
+print("TF-IDF model file path:", tfidi_model_file)
+
+# Load the TF-IDF model
+tfidi = joblib.load(tfidi_model_file)
 
 # Download NLTK resources
 nltk.download('punkt')
